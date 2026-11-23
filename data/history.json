@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "exportedAt": "2026-11-23T10:33:07.382Z",
-  "count": 1,
+  "exportedAt": "2026-11-23T14:28:04.076Z",
+  "count": 2,
   "items": [
+    {
+      "id": "mwtd082i-cq7hizr1",
+      "createdAt": 1795444009434,
+      "source": "ai",
+      "engine": "qwen4-max-preview",
+      "durationSec": 0,
+      "text": "# 项目同步纪要｜Solar Panel / DP420 NPI（项目名【待确认】）｜2025-11-23（年份推断）\n\n**0 头条**：30pcs PCB 今日完成、10pcs 先发；**两处硬卡点**——Solar Panel 夹具供应商无反馈、NG 判定责任人未定（8D 无法关闭）；DP420 需小批量先跑再切。\n\n**1 人员进展**\n\n| 人 | 完成 | 计划 | 卡点 | 状态 |\n|---|---|---|---|---|\n| S（产线） | S PCB 30pcs（battery side） | 11/23 收尾30pcs，10pcs 尽快出货；余料11/28到→12/10测试→12/11入库 | — | ✅ |\n| Sarah | 组装夹具到齐+归档；15 panel/30 PCB 安排 X-ray（带A0编号） | 10pcs 内部拍照确认焊接，汇总为一份报告跟进 | 拍照/判定口径需与 Sarah 对齐 | 🕐 |\n| ME/设备【待确认】 | E设备、载具 buyoff 完成；DP420 已获批 | 先跑30pcs（首轮 FAI+3pcs），无异常再全量；切换前更新SOP/资料并通知相关方 | 用完S56才切DP420，导入日按 forecast 待定 | 🕐 |\n| Brian | SMT 报告完成；MEES G站邮件确认 YearA 模块 8h | 先排切片/应力/测试座（301窄板已到），GR 待测试机放最后3天；11/30 充电台到厂后验证 MEES 两站并 buyoff | 夹具供应商无反馈；SMT 需新数据才可关闭；两站现借用其他项目电脑 | ⚠️ |\n| QE/质量【待确认】 | 根因定位：SOP未要求扫码记录；返工品与正常品混检、无标识 | 改8D第4/5项（拆分发生/流出原因）、更新SOP+新流程图、定义NG识别与返工流程 | **NG 由谁判定未定**（邮件已发无回复） | ⚠️ |\n| 采购/物料 | TJ 确认颜色 Gray1（无需额外采购）；301窄板到料 | 追 Solar Panel 完整数据、Year2 充电台11/30到厂 | 仅收到部分 panel 数据；Gushan 未交件；小/taco basket 屏蔽材料待放行 | 🚚 |\n\n**2 卡点与求助**\n\n| 卡点 | 影响 | 需要谁 | 期望解决日 |\n|---|---|---|---|\n| Solar Panel 夹具供应商无反馈（Brian 已推） | 夹具验证无法启动 | 供应商 + Brian 上级升级 | 【待确认】 |\n| NG 判定责任人未定义 | 8D 第4/5项与SOP无法定稿 | QE主管/客户质量（邮件回复） | 【待确认】 |\n| Solar Panel 数据仅部分到、Gushan 未交件 | 面板段验证排不进 | Gushan / 采购 | 【待确认】 |\n| 测试机未到 | GR 只能压到最后3天 | 设备/测试供应商 | 12/10（推断） |\n| MEES 两站借用他项目电脑 | 无法正式上线 | Brian + IT/设备 | 11/30（推断，下周一） |\n\n**3 依赖阻塞**\n```mermaid\nflowchart LR\nGushan[Gushan 交件/数据]-->SP[Solar Panel 夹具验证]-->Brian\nVendor[夹具供应商无反馈]-->SP\nNG[NG判定责任人未定]-->QE[8D/SOP 关闭]\nTester[测试机到料]-->GR[GR验证]-->Rpt[Brian 验证报告]\nS56[S56 库存用完]-->DP[DP420 导入]-->IE[IE/QE 首周驻线]\n```\n\n**5 今日待办**\n- S：11/23 完成30pcs并发出10pcs。\n- Sarah：11/23 完成10pcs内部拍照+合并报告。\n- ME【待确认】：11/23 内部定 DP420 小批量方案（30pcs / FAI+3pcs），切换前更新资料；DP420 首周 IE+QE 驻线，S56 维持每2小时巡检。\n- Brian：11/23 出各项验证排期日期并先共享报告、同步微信最新状态。\n- QE【待确认】：11/23 追 NG 判定归属邮件回复，改8D第4/5项。\n- 采购：11/25 前完成 PCB test 检查项确认。\n\n**6 时间轴**：11/23 30pcs完成/10pcs出货 → 11/25 PCB test检查 → 11/28 余PCB到料 → 11/30 电池夹具tracking+Year2充电台到厂（推断） → 12/10 测试 → 12/11 余量入库。"
+    },
     {
       "id": "mwt2iixs-r8wea82t",
       "createdAt": 1795426387552,
