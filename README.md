@@ -6,14 +6,24 @@
 
 ## 备份流程
 
-1. 打开 VoiceTrans 应用 → 「历史记录」页 → 点击「导出全部」，得到 `历史备份-YYYYMMDD-HHMMSS.json`
-2. 将文件放入本仓库 `data/` 目录，重命名为 `history.json`（覆盖旧备份；git 历史保留每一版）
-3. 提交并推送（一次 push 同时推 GitHub + Gitee 双远端）：
+### 方式一：应用内一键备份（推荐，dev 模式可用）
+
+1. `npm run dev` 启动应用 → 「历史记录」页 → 点「**备份并推送**」
+2. 应用自动把全量历史 JSON 写入本仓库 `data/history.json`，自动 commit 并 push 到 GitHub + Gitee 双远端
+3. 页面「git 备份」状态区实时显示仓库路径、`data/history.json` 更新时间、最近提交与每个远端的推送结果
+
+> 内容无变化时跳过提交、直接确认双端同步；备份仓库路径不在此处时，应用侧可用环境变量 `BACKUP_REPO_PATH` 指定。
+
+### 方式二：手动备份（应用未用 dev 模式启动时）
+
+1. 「历史记录」页点「导出全部」，得到 `历史备份-YYYYMMDD-HHMMSS.json`（备份服务未连接时自动退回浏览器下载）
+2. 将文件放入本仓库 `data/` 目录，重命名为 `history.json`
+3. 在应用历史页点「推送」，或手动执行：
 
 ```bash
 git add data/history.json
 git commit -m "backup: 历史记录备份 2026-11-23"
-git push
+git push   # 一次 push 同时推 GitHub + Gitee 双远端
 ```
 
 ## 恢复流程
